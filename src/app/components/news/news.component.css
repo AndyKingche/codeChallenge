@@ -1,0 +1,26 @@
+.title__news{
+    font-weight: bold;
+}
+.description__news{
+    font-weight: 100;
+}
+.url__news{
+    font-size: 10px;
+    font-weight: bold;
+}
+.url__news a{
+    font-weight: 100;
+    font-style: italic;
+}
+.col-md-6 img{
+    width: 580px;
+    height: 328px;
+}
+.data__news{
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.blog{
+    margin-bottom: 5vh;
+}

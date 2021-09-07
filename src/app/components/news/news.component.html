@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row blog" *ngFor="let noticias of noticias.articles">
+        <div class="col-md-6">
+           <div class="title__news">
+            {{noticias.title}}
+           </div>
+           <div class="description__news">
+               {{noticias.description}}
+           </div>
+           <p class="content__news">
+               {{noticias.content}}
+           </p>
+           <div class="url__news">
+            Para más información visita: 
+              <a href="{{noticias.url}}"> {{noticias.url}} </a> 
+           </div>
+           <div class="row data__news">
+               <div class="col-md-6">
+                   Por: {{noticias.source.name}}
+               </div>
+            <div class="col-md-6" id="date">
+                {{noticias.publishedAt}}
+            </div>
+           </div>
+        </div>
+        <div class="col-md-6">
+            <img src="{{noticias.image}}" alt="{{noticias.source.name}}">
+        </div>
+    </div>
+</div>

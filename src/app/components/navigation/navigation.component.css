@@ -1,0 +1,10 @@
+.main__title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-link:hover{
+text-decoration: underline;
+}
+.size__input{
+    width: 15%;
+}

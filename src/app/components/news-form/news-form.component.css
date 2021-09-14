@@ -1,7 +1,14 @@
+.container-fluid{
+    margin-top: 10vh;
+}
 .form-control{
     margin-bottom: 2vh;
 }
 
 .boton__dere{
     margin-left: 1em;
+}
+
+.image__view{
+    margin-bottom: 5vh;
 }

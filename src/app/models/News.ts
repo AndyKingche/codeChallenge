@@ -1,16 +1,16 @@
 export interface News{
-    articles?: [
+    articles?: 
         {
-            title?:String
-            description?: String,
-            content?: String,
-            url?: String,
-            image: String,
-            publishedAt: String,
+            title?:string,
+            description?: string,
+            content?: string,
+            url?: string,
+            image: string,
+            publishedAt: string,
             source?: {
-                name?: String,
-                url?: String
+                name?: string,
+                url?: string
             }
-        }
-    ]
+        }   
+    
 }

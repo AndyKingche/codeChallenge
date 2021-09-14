@@ -8,7 +8,10 @@ import { NewsComponent } from './components/news/news.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule} from 'ngx-toastr';
 import { NewsFormComponent } from './components/news-form/news-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +24,8 @@ import { NewsFormComponent } from './components/news-form/news-form.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule,
     HttpClientModule
   ],
   providers: [],

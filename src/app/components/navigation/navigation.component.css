@@ -5,6 +5,15 @@
 .nav-link:hover{
 text-decoration: underline;
 }
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 0px !important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
 .size__input{
-    width: 15%;
+    width: 30%;
+    margin-left: 50vh;
 }

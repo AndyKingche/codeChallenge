@@ -21,6 +21,12 @@
     font-weight: 100;
     text-transform: uppercase;
 }
+.option__news{
+    margin-top: 5vh;
+}
 .blog{
     margin-bottom: 5vh;
+}
+.container-fluid{
+    margin-top: 10vh;
 }

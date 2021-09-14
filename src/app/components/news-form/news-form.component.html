@@ -1,5 +1,5 @@
 <div class="container-fluid">
-
+<h5>{{creacion}} Noticia</h5>
     <div class="form-group">
 
         <input type="text" class="form-control" [(ngModel)]="this.noticias.articles.title" id="title" name="title" placeholder="Título de la Noticia">
@@ -7,16 +7,18 @@
         <textarea  class="form-control" [(ngModel)]="this.noticias.articles.content" id="content" placeholder="Contenido...." rows="3"></textarea>
         <input type="text" class="form-control" [(ngModel)]="this.noticias.articles.url" id="url" name="url" placeholder="Ingresar Url">
         <div class="p-col">Ingrese Imagen 1
-            <input class="form-control" id="formFile" type="file" accept="image/*" (change)="onBasicUpload($event)">
+            <input class="form-control" id="formFile" type="file" accept="image/*" (change)="UploadImage($event)">
         </div>
-        <img src="{{imagenObtenidaMostrar}}" width="200px">
+        <img class="image__view" src="{{imagenObtenidaMostrar}}" width="200px">
 
+        <input type="text" class="form-control" [(ngModel)]="this.noticias.articles.source.name" id="name" name="name" placeholder="Nombre Empresa/Autor">
+        <input type="text" class="form-control" [(ngModel)]="this.noticias.articles.source.url" id="url-source" name="url-source" placeholder="Url web plataform">
         
 
     </div>
 
     <div class="form-group">
-        <button class="btn btn-primary" (click)="edit ? updateDisenos() : saveDisenos()">Aceptar</button>
+        <button class="btn btn-primary" (click)="edit ? updateNoticias() : saveNoticias()">Aceptar</button>
         <button type="button" class="btn btn-info boton__dere" routerLink="/news">Regresar</button>
     </div>
 

@@ -1,0 +1,7 @@
+{
+    "/api/":{
+        "target":"https://gnews.io/api/v4/search?q=example&token=fabc0ca4d42110f997ae1eab1d2674a2/",
+        "secure": false,
+        "loglevel": "debug"
+    }
+}

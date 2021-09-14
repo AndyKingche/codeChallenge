@@ -9,11 +9,11 @@ export class NewsService {
   constructor(private http: HttpClient) { }
 
   getNews(){
-   return this.http.get(`https://gnews.io/api/v4/top-headlines?lang=en&token=4aab8c97377ea0c5ab312211ea401cee`);
+   return this.http.get(`https://gnews.io/api/v4/top-headlines?lang=en&token=b65cf80cc58e5aee7fcb4196515e47fa`);
   }
 
   searchNews(busqueda:string){
-   return this.http.get(`https://gnews.io/api/v4/search?q=${busqueda}&token=4aab8c97377ea0c5ab312211ea401cee`);
+   return this.http.get(`https://gnews.io/api/v4/search?q=${busqueda}&token=b65cf80cc58e5aee7fcb4196515e47fa`);
 
   }
 }

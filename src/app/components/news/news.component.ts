@@ -34,14 +34,20 @@ export class NewsComponent implements OnInit {
         ]
   }
   localstorage_news:any=[];
+  params:any;
+  searchingNews:boolean=false;
   ngOnInit() {
-    this.getNews();
+    
     //this.getNewsLocal();
-   const params = this.router.snapshot.params;
-   //console.log(params.search);
-   if(params.search!){
-     this.searchNews(params.search);
+   this.params = this.router.snapshot.params;
+   console.log(this.params.search)
+   if(this.params.search!){
+    this.searchNews(this.params.search);
+      this.params = " ";
+    }else{
+    this.getNews();
    }
+ 
   }
 
   async getNews(){
@@ -117,8 +123,10 @@ export class NewsComponent implements OnInit {
         this.noticias.articles[i].publishedAt = `${dia} ${mes} ${year}`;
           
       }
+      
     },err=>console.error(err))
 
+  
   }
   eliminar(id:number){
     console.log(id)
